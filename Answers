@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A multi-section HTML5 web page demonstrating lists, tables, media, and a complete accessible form with validation.">
+    <meta name="keywords" content="HTML5, Form, Validation, Lists, Tables, Media, Accessibility, Semantic Web">
+    <meta name="author" content="Your Name">
+    <title>Enhanced HTML5 Form Example</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header role="banner">
+        <h1>Enhanced HTML5 Form Page</h1>
+        <p>This page demonstrates semantic HTML5, lists, tables, media, and a fully accessible form with native validation.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+
+        <!-- Lists Section -->
+        <section aria-labelledby="lists-heading">
+            <h2 id="lists-heading">Our Features</h2>
+
+            <!-- Unordered List -->
+            <h3>Key Benefits:</h3>
+            <ul>
+                <li>Accessibility-friendly design</li>
+                <li>SEO-optimized structure</li>
+                <li>Responsive layout for all devices</li>
+            </ul>
+
+            <!-- Ordered List -->
+            <h3>Steps to Get Started:</h3>
+            <ol>
+                <li>Sign up using the form below</li>
+                <li>Verify your email</li>
+                <li>Start using our services</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section aria-labelledby="table-heading">
+            <h2 id="table-heading">Pricing Plans</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Price</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>$10/month</td>
+                        <td>Access to standard features</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>$25/month</td>
+                        <td>All features + priority support</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>Custom</td>
+                        <td>Full suite + dedicated account manager</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section aria-labelledby="media-heading">
+            <h2 id="media-heading">Media Showcase</h2>
+            <figure>
+                <img src="example-image.jpg" alt="Example media image" width="400">
+                <figcaption>Illustration of our services in action.</figcaption>
+            </figure>
+
+            <figure>
+                <video controls width="400">
+                    <source src="example-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Introductory video about our platform.</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="example-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Sample audio introduction.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Form Section -->
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Sign Up Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required autocomplete="given-name">
+                    <br><br>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required autocomplete="family-name">
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+                    <br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="[+0-9]{10,15}" required>
+                </fieldset>
+
+                <br>
+
+                <!-- Account Details -->
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" minlength="4" maxlength="20" placeholder="Choose a username" required>
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="6" placeholder="Enter password" required>
+                    <br><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="6" placeholder="Confirm password" required>
+                </fieldset>
+
+                <br>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="plan">Select Plan:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">--Choose a plan--</option>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="enterprise">Enterprise</option>
+                    </select>
+                    <br><br>
+
+                    <label>Preferred Contact:</label>
+                    <input type="radio" id="contact-email" name="contact" value="email" checked>
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contact" value="phone">
+                    <label for="contact-phone">Phone</label>
+                    <br><br>
+
+                    <label>Interests:</label>
+                    <input type="checkbox" id="news" name="interests" value="news">
+                    <label for="news">Newsletter</label>
+                    <input type="checkbox" id="updates" name="interests" value="updates">
+                    <label for="updates">Product Updates</label>
+                </fieldset>
+
+                <br>
+
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="bio">Short Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself"></textarea>
+                    <br><br>
+
+                    <label for="referral">Referral Code:</label>
+                    <input type="text" id="referral" name="referral" readonly value="N/A">
+                </fieldset>
+
+                <br>
+
+                <!-- Submit -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
